@@ -1,4 +1,4 @@
-name: 'Flakes Updator'
+name: 'Flakes Updater'
 description: 'Automatically updates all Nix flake.lock files in your repository and creates a pull request with the updates.'
 author: 'Comamoca'
 runs:

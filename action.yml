@@ -1,6 +1,12 @@
 name: 'Flakes Updater'
 description: 'Automatically updates all Nix flake.lock files in your repository and creates a pull request with the updates.'
 author: 'Comamoca'
+
+inputs:
+  token:
+    description: 'GitHub token to authenticate API requests'
+    required: true
+
 runs:
   using: 'composite'
   steps:

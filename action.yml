@@ -9,7 +9,7 @@ runs:
     - name: Install Nix
       uses: cachix/install-nix-action@v26
       with:
-        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+        github_access_token: ${{ inputs.token }}
     - name: Update all flake.nix files
       run: |
         find . -name "flake.nix" -type f | while read -r flake_file; do
@@ -21,7 +21,7 @@ runs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ inputs.token }}
         commit-message: ':package: Update flake.lock files'
         title: 'chore: Update Nix flake dependencies'
         body: |

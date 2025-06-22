@@ -8,7 +8,7 @@
 
 <img src="https://emoji2svg.deno.dev/api/🦊" alt="eyecatch" height="100">
 
-# update-flakes
+# flakes-updator
 
 Automatically updates all Nix flake.lock files in your repository and creates a pull request with the updates.
 

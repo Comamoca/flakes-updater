@@ -26,7 +26,7 @@ Automatically updates all Nix flake.lock files in your repository and creates a 
 
 ```yaml
 - name: Update Nix Flakes
-  uses: comamoca/flakes-updater@v1
+  uses: Comamoca/flakes-updater@1.0.0
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -46,7 +46,7 @@ jobs:
   update-flakes:
     runs-on: ubuntu-latest
     steps:
-      - uses: comamoca/flakes-updater@v1
+	  - uses: Comamoca/flakes-updater@1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
